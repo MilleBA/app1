@@ -10,6 +10,6 @@ export default function MyButton() {
 
     return (
         <button type="button" onClick={handleClick}
-                className='m-4 flex flex-col mx-auto bg-orange-300 hover:bg-orange-600 p-2 rounded shadow-lg'>Clicked {count} times bla</button>
+                className='m-4 flex flex-col mx-auto bg-orange-300 hover:bg-orange-600 p-2 rounded shadow-lg'>Clicked {count} times XXX</button>
     );
 }
