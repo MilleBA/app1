@@ -1,9 +1,10 @@
 import Card from "@/components/Card";
 import data from "@/data.js";
+import Wrapper from "@/components/Wrapper";
 
 export default function HomePage() {
     return (
-        <>
+        <Wrapper>
             {
                 data.map(card => (
                     <Card
@@ -14,6 +15,6 @@ export default function HomePage() {
                         imageUrl={card.imageUrl}
                     />
                 ))}
-        </>
+        </Wrapper>
     )
 }
