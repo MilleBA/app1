@@ -17,6 +17,7 @@ function Card({title, description, imageUrl, buttonText = "Default Button Text"}
                 <button
                     className='m-4 flex flex-col mx-auto bg-gray-500 hover:bg-gray-800 text-white p-2 rounded shadow-lg'>{buttonText}</button>
                 <MyButton/>
+                <p className='text-cyan-950 font-bold'>Ny text</p>
             </div>
         </div>
     );
