@@ -25,8 +25,8 @@ export default function ContactPage() {
                     <div className="w-0 border border-gray-300">
 
                     </div>
-                    <div class="w-1/2 text-center">
-                        <span class="font-bold">2.0 k</span> Following
+                    <div className="w-1/2 text-center">
+                        <span className="font-bold">2.0 k</span> Following
                     </div>
                 </div>
             </div>
