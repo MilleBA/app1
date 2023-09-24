@@ -4,7 +4,7 @@ const info = [
     "title": "TechWord",
     "description": "Word game",
     "buttonText": "More",
-    "imageUrl": "/image/techword.png",
+    "imageUrl": "/images/techword.png",
     "href":"https://github.com/MilleBA/Hackaton2023"
   },
   {
@@ -12,7 +12,7 @@ const info = [
     "title": "Lifjell Kunstsenter",
     "description": "Website",
     "buttonText": "More",
-    "imageUrl": "/image/lifjell.png",
+    "imageUrl": "/images/lifjell.png",
     "href":"https://www.lifjellkunstsenter.com/"
   },
   {
@@ -20,7 +20,7 @@ const info = [
     "title": "www.milleba.com",
     "description": "Website",
     "buttonText": "More",
-    "imageUrl": "/image/milleba.png",
+    "imageUrl": "/images/milleba.png",
     "href":"https://milleba.com/en/"
   }
 ]
