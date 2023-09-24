@@ -5,7 +5,7 @@ export default function ContactPage() {
     return (
         <div className="flex items-center justify-center h-screen bg-center bg-cover contact-img">
             <div className="card w-96 mx-auto rounded-2xl bg-teal-50 shadow-xl hover:shadow">
-                <Image className="w-32 mx-auto rounded-full -mt-20 border-8 border-white" src="/image/icon.png"
+                <Image className="w-32 mx-auto rounded-full -mt-20 border-8 border-white" src="/images/icon.png"
                        alt="" width={1000} height={1000}/>
                 <h2 className="text-center mt-2 text-3xl font-medium">Mille Brekke Amundsen</h2>
                 <div className="text-center bg-sky-200 mt-2 p-2 font-bold text-lg">
