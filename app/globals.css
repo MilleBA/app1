@@ -2,4 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-
+.custom-img {
+    background-image: url('/image/b.jpg');
+}

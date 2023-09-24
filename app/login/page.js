@@ -1,7 +1,7 @@
-import StartingPageContent from '@/components/login/starting-page';
-
-function Login() {
-    return <StartingPageContent/>;
+export default function LoginPage() {
+    return (
+        <>
+            <h1>Login Page</h1>
+        </>
+    )
 }
-
-export default Login;

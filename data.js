@@ -1,24 +1,27 @@
 const info = [
   {
     "id": 1,
-    "title": "Card 1",
-    "description": "This is the content for card 1.",
-    "buttonText": "Send",
-    "imageUrl": "https://images.unsplash.com/photo-1684572640171-e1d8c7fcfcf3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fG5vcmdlJTIwZmxhZ3xlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=600&q=60.jpg"
+    "title": "TechWord",
+    "description": "Word game",
+    "buttonText": "More",
+    "imageUrl": "/image/techword.png",
+    "href":"https://github.com/MilleBA/Hackaton2023"
   },
   {
     "id": 2,
-    "title": "Card 2",
-    "description": "This is the content for card 2.",
-    "buttonText": "Delete",
-    "imageUrl": "https://images.unsplash.com/photo-1684572640000-f494f1026d59?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fG5vcmdlJTIwZmxhZ3xlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=600&q=60.jpg"
+    "title": "Lifjell Kunstsenter",
+    "description": "Website",
+    "buttonText": "More",
+    "imageUrl": "/image/lifjell.png",
+    "href":"https://www.lifjellkunstsenter.com/"
   },
   {
     "id": 3,
-    "title": "Card 3",
-    "description": "This is the content for card 3.",
-    "buttonText": "Cancel",
-    "imageUrl": "https://images.unsplash.com/photo-1635180738635-a1c867491861?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8bm9yZ2UlMjBmbGFnfGVufDB8fDB8fHww&auto=format&fit=crop&w=600&q=60.jpg"
+    "title": "www.milleba.com",
+    "description": "Website",
+    "buttonText": "More",
+    "imageUrl": "/image/milleba.png",
+    "href":"https://milleba.com/en/"
   }
 ]
 

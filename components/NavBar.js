@@ -1,41 +1,52 @@
 'use client'
 
 import {usePathname} from 'next/navigation';
-import Link from 'next/link';
+import Link from "next/link";
+import {useState} from "react";
+import Logo from "@/components/Logo";
+import {Menu, X} from "lucide-react";
 
 export function NavBar() {
-    const pathname = usePathname()
+    const pathname = usePathname();
 
-    // styles for all links
-    const linkStyle = 'flex items-center p-4 font-extrabold font-mono tracking-wide hover:bg-red-300 hover:text-black duration-300 mx-4';
+    const linkStyle = 'flex items-center font-bold font-mono tracking-wide hover:text-blue-950 duration-300';
 
-    // styles for active and non-active links
-    const activeStyle = linkStyle + ' text-white bg-gray-500 ';
-    const nonActiveStyle = linkStyle + ' text-black font-bold';
+    const activeStyle = linkStyle + ' text-white';
+    const nonActiveStyle = linkStyle + ' text-teal-300';
+
+    const [open, setOpen] = useState(false);
+
+    const links = [
+        {name: "Home", href: "/"},
+        {name: "Projects", href: "/projects"},
+        {name: "Contact", href: "/contact"},
+        {name: "Login", href: "/login"},
+    ];
 
     return (
-        <nav className='flex justify-center items-center bg-red-100 drop-shadow-lg'>
-            <ul className='flex justify-around p-2'>
-                <li>
-                    <Link href="/" className={pathname === '/' ? activeStyle : nonActiveStyle}>
-                        Home
-                    </Link>
-                </li>
-                <li>
-                    <Link href="/contact" className={pathname === '/contact' ? activeStyle : nonActiveStyle}>
-                        Contact
-                    </Link>
-                </li>
-                <li>
-                    <Link href='/auth' className={pathname === '/auth' ? activeStyle : nonActiveStyle}>Login</Link>
-                </li>
-                <li>
-                    <Link href='/profile' className={pathname === '/profile' ? activeStyle : nonActiveStyle}>Profile</Link>
-                </li>
-                <li>
-                    <button className='flex items-center p-4 font-extrabold font-mono tracking-wide rounded-xl hover:bg-red-600 hover:text-black duration-300 mx-4'>Logout</button>
-                </li>
-            </ul>
-        </nav>
-    )
+        <div className='shadow-md w-full top-0 left-0 border-b-2 border-blue-950'>
+            <div
+                className='md:flex items-center justify-between bg-gray-950 border-b-1 border-blue-950 py-4 md:px-10 px-7'>
+                <div className='flex items-center cursor-pointer'>
+                    <span className='mr-1 pt-2'><Logo/></span>
+                </div>
+                <div onClick={() => setOpen(!open)}
+                     className='text-3xl absolute right-8 top-9 cursor-pointer md:hidden'>
+                    {open ? <X className='text-white'/> : <Menu className='text-white'/>}
+                </div>
+                <ul className={`md:flex md:items-center md:pb-0 absolute md:static left-0 bg-gray-950 bg-opacity-95  w-full md:w-auto md:pl-0 pl-9 transition-all duration-500 ease-in ${open ? 'top-21' : 'top-[-490px]'} `}>
+                    {links.map((link) => (
+                        <li key={link.name} className='md:ml-8 md:my-0 my-7'>
+                            <Link
+                                href={link.href}
+                                className={pathname === link.href ? activeStyle : nonActiveStyle}
+                            >
+                                {link.name}
+                            </Link>
+                        </li>
+                    ))}
+                </ul>
+            </div>
+        </div>
+    );
 }

@@ -1,20 +1,9 @@
-import Card from "@/components/Card";
-import data from "@/data.js";
-import Wrapper from "@/components/Wrapper";
+import './globals.css'
+import Hero from "@/components/Hero";
 
 export default function HomePage() {
     return (
-        <Wrapper>
-            {
-                data.map(card => (
-                    <Card
-                        key={card.id}
-                        title={card.title}
-                        description={card.description}
-                        buttonText={card.buttonText}
-                        imageUrl={card.imageUrl}
-                    />
-                ))}
-        </Wrapper>
+        <Hero heading='Tech Explorer' message='Diving deep into the world of code, one algorithm at a time.'/>
+
     )
 }
