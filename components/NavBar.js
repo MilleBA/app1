@@ -5,6 +5,7 @@ import Link from "next/link";
 import {useState} from "react";
 import Logo from "@/components/Logo";
 import {Menu, X} from "lucide-react";
+import Button from "@/components/Button";
 
 export function NavBar() {
     const pathname = usePathname();
@@ -21,6 +22,7 @@ export function NavBar() {
         {name: "Projects", href: "/projects"},
         {name: "Contact", href: "/contact"},
         {name: "Login", href: "/login"},
+        {name: "Profile", href: "/profile"},
     ];
 
     return (
@@ -45,7 +47,11 @@ export function NavBar() {
                             </Link>
                         </li>
                     ))}
+                    <div className='md:p-4'>
+                        <Button>Logout</Button>
+                    </div>
                 </ul>
+
             </div>
         </div>
     );
