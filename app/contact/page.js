@@ -4,7 +4,7 @@ import Link from "next/link";
 export default function ContactPage() {
     return (
         <div className="flex items-center justify-center h-screen bg-center bg-cover contact-img">
-            <div className="card w-96 mx-auto bg-teal-50  shadow-xl hover:shadow">
+            <div className="card w-96 mx-auto rounded-2xl bg-teal-50 shadow-xl hover:shadow">
                 <Image className="w-32 mx-auto rounded-full -mt-20 border-8 border-white" src="/image/icon.png"
                        alt="" width={1000} height={1000}/>
                 <h2 className="text-center mt-2 text-3xl font-medium">Mille Brekke Amundsen</h2>
