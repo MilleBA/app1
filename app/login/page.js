@@ -4,7 +4,7 @@ import {useState} from 'react';
 export default function LoginPage() {
     const [isLogin, setIsLogin] = useState(true);
 
-    const swichAuthHandler = async (e) => {
+    const switchAuthHandler = async (e) => {
         e.preventDefault();
         setIsLogin((prevState) => !prevState);
     };
@@ -40,7 +40,7 @@ export default function LoginPage() {
                         <button type="button"
                                 className="w-[full-2rem] bg-teal-500 text-white font-mono py-2 px-6 rounded hover:bg-teal-800 duration-500">{isLogin ? 'Login' : 'Create account'}
                         </button>
-                        <button onClick={swichAuthHandler}
+                        <button onClick={switchAuthHandler}
                                 className='text-teal-500 w-full m-4 p-2 text-center hover:border hover:border-teal-500'>{isLogin ? 'Create new account' : 'Login with existing account'}</button>
                     </div>
                 </form>
