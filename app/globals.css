@@ -5,3 +5,15 @@
 .custom-img {
     background-image: url('/image/b.jpg');
 }
+
+.projects-img {
+    background-image: url('/image/d.jpg');
+}
+
+.contact-img {
+    background-image: url('/image/c.jpg');
+}
+
+.login-img {
+    background-image: url('/image/a.jpg');
+}

@@ -4,6 +4,7 @@ import Card from "@/components/Card";
 
 export default function ProjectPage() {
     return (
+
         <Wrapper>
             {
                 data.map(card => (
