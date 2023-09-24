@@ -14,7 +14,7 @@ export default function ContactPage() {
                           className="text-center bg-sky-200 mt-2 font-bold text-lg">www.milleba.com</Link></div>
                 <p className="text-center p-2 font-normal text-lg"> Fullstack Developer</p>
                 <p className="px-6 text-center mt-2 font-light text-sm">
-                    Love to take a long walk, swim.
+                    Passionate about wandering through forests and scaling mountains, embracing the serene and the sublime of the great outdoors.
                 </p>
 
                 <hr className="mt-8"/>
