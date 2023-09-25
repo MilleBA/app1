@@ -24,7 +24,7 @@ export default function NyVareInput({leggTilVare}) {
     return (
         <>
             <div className="bg-teal-50 p-8 rounded-2xl shadow-md w-96">
-                <h2 className="text-2xl mb-6 font-bold text-center">Insert en ny vare:</h2>
+                <h2 className="text-2xl mb-6 font-bold text-center">Legg til en ny vare:</h2>
                 <form onSubmit={submitHandler}>
                     <div className="mb-4">
                         <label className="block mb-2" htmlFor="name">Vare navn</label>
