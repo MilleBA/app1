@@ -1,9 +1,24 @@
-import {MongoClient} from 'mongodb';
+import {MongoClient} from "mongodb";
 
-const client = new MongoClient(process.env.MONGODB_URI);
+const uri = process.env.MONGODB_URI;
+const options = {};
+
+if (!process.env.MONGODB_URI) {
+    throw new Error("Please add your Mongo URI to .env.local");
+}
+
+let mongoClient;
 
 export async function connectToDatabase() {
-    if (!client.isConnected()) await client.connect();
-    const db = client.db('min_app');
-    return {db, client};
+    try {
+        if (mongoClient) {
+            return {mongoClient}
+        }
+
+        mongoClient = await (new MongoClient(uri, options)).connect();
+        console.log("Just Connected!");
+        return {mongoClient};
+    } catch (e) {
+        console.log(e);
+    }
 }

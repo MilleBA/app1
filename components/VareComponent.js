@@ -23,7 +23,7 @@ export default function VareComponent(props) {
     };
 
     return (
-        <>
+        <div className="">
             <NyVareInput leggTilVare={leggTilVare}/>
             <div className="m-4 flex flex-col border-2 border-teal-700 bg-teal-50 rounded-2xl">
 
@@ -58,7 +58,7 @@ export default function VareComponent(props) {
                     </div>
                 </div>
             </div>
-        </>
+        </div>
     );
 }
 
