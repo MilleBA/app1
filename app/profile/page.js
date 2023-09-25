@@ -7,7 +7,7 @@ export default function ProfilePage() {
 
     const handleSubmit = async (e) => {
         e.preventDefault();
-        // TODO: Implement your profile logic here
+       
         console.log('New Password:', newPassword);
         console.log('Old Password:', oldPassword);
     };
@@ -22,10 +22,8 @@ export default function ProfilePage() {
                         <input
                             type="password"
                             id="newPassword"
-                            value={newPassword}
                             onChange={(e) => setNewPassword(e.target.value)}
                             className="w-full px-3 py-2 border rounded-md"
-                            autoComplete="newPassword"
                             required
                         />
                     </div>
@@ -34,10 +32,8 @@ export default function ProfilePage() {
                         <input
                             type="password"
                             id="oldPassword"
-                            value={oldPassword}
                             onChange={(e) => setOldPassword(e.target.value)}
                             className="w-full px-3 py-2 border rounded-md"
-                            autoComplete="oldPassword"
                             required
                         />
                     </div>
