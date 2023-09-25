@@ -21,6 +21,7 @@ export function NavBar() {
         {name: "Home", href: "/"},
         {name: "Projects", href: "/projects"},
         {name: "Contact", href: "/contact"},
+        {name: "Varer", href: "/varer"},
         {name: "Login", href: "/login"},
         {name: "Profile", href: "/profile"},
     ];
