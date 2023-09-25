@@ -5,7 +5,7 @@ export default function VarePage() {
 
     return (
         <>
-            <div className="p-4 flex  flex-row md:flex-col  items-center justify-center h-screen bg-center bg-cover vare-img">
+            <div className="p-4 flex  flex-row md:flex-col  items-center justify-center h-full bg-center bg-cover vare-img">
                 <VareComponent/>
             </div>
         </>
