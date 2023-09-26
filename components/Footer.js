@@ -12,7 +12,6 @@ export default function Footer() {
                     <input
                         type="email"
                         placeholder='      Enter Your Email'
-                        autoComplete={true}
                         className='text-gray-800 sm:w-72 w-full sm:mr-5 m1 lg:mb-0 mb-4 py-2.5 rounded focus:outline-none '/>
                     <Button>Subscribe</Button>
                 </div>
