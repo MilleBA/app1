@@ -8,12 +8,9 @@ export default function VarePage() {
     const [vare, setVare] = useState([]);
 
     return (
-        <>
             <div
-                className="p-4 flex  flex-row md:flex-col  items-center justify-center h-screen bg-center bg-cover vare-img">
+                className="p-4 h-full bg-center bg-cover vare-img">
                 <VareComponent/>
             </div>
-        </>
-
     )
 }
