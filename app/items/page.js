@@ -5,7 +5,7 @@ export default function ItemsPage() {
 
 
     return (
-        <div className="p-10 flex flex-col h-screen bg-center bg-cover item-img">
+        <div className="p-10 flex flex-col h-screen justify-center bg-center bg-cover item-img">
             <nav className='flex justify-between items-center bg-slate-800 px-8 py-3'>
                 {/* eslint-disable-next-line react/no-unescaped-entities */}
                 <Link href={'/items'} className='text-white font-bold'>Mille's 🛒</Link>
