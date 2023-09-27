@@ -2,7 +2,6 @@
 import {useState} from "react";
 import {useRouter} from "next/navigation";
 
-const API_URL = process.env.NEXT_PUBLIC_API_URL || process.env.LOCAL_URL;
 
 export default function addItem() {
     // eslint-disable-next-line react-hooks/rules-of-hooks
@@ -24,7 +23,7 @@ export default function addItem() {
         }
 
         try {
-            const res = await fetch(`${API_URL}/api/items`, {
+            const res = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/api/items`, {
                 method: 'POST',
                 headers: {
                     'Content-type': 'application/json'

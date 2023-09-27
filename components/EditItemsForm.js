@@ -4,7 +4,6 @@ import {useState} from "react";
 import {useRouter} from "next/navigation";
 import Button from "@/components/Button";
 
-const API_URL = process.env.NEXT_PUBLIC_API_URL || process.env.LOCAL_URL;
 
 export default function EditItemsForm({id, name, price, amount}) {
     const [newName, setNewName] = useState(name);
@@ -17,7 +16,7 @@ export default function EditItemsForm({id, name, price, amount}) {
         e.preventDefault();
 
         try {
-            const res = await fetch(`${API_URL}/api/items/${id}`, {
+            const res = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/api/items/${id}`, {
                 method: 'PUT',
                 headers: {
                     'Content-type': 'application/json'
