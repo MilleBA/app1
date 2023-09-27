@@ -4,6 +4,7 @@ import Link from "next/link";
 import {PenSquare} from 'lucide-react';
 import React, {useEffect, useState} from 'react';
 
+const API_URL = process.env.NEXT_PUBLIC_API_URL || process.env.LOCAL_URL;
 export default function ItemsComponent() {
     const [items, setItems] = useState([]); // Initialize state to an empty array
     const num = 1;
@@ -11,7 +12,7 @@ export default function ItemsComponent() {
     useEffect(() => {
         const getItems = async () => {
             try {
-                const res = await fetch('https://app1-milleba.vercel.app/api/items', {cache: "no-store"});
+                const res = await fetch(`${API_URL}/api/items`, {cache: "no-store"});
                 if (!res.ok) throw new Error("Failed to fetch items");
                 const data = await res.json();
                 setItems(data.items || []); // Set the items state to the fetched items, or an empty array if it's undefined

@@ -2,13 +2,15 @@
 import {Trash2} from 'lucide-react';
 import {useRouter} from "next/navigation";
 
+const API_URL = process.env.NEXT_PUBLIC_API_URL || process.env.LOCAL_URL;
+
 export default function RemoveBtn({id}) {
 
     const router = useRouter();
     const removeItems = async () => {
         const confirmed = confirm('Are you sure?');
         if (confirmed) {
-            const res = await fetch(`https://app1-milleba.vercel.app/api/items?id=${id}`, {
+            const res = await fetch(`${API_URL}/api/items?id=${id}`, {
                 method: 'DELETE',
             });
             if (res.ok) {

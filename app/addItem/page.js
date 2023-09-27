@@ -2,6 +2,8 @@
 import {useState} from "react";
 import {useRouter} from "next/navigation";
 
+const API_URL = process.env.NEXT_PUBLIC_API_URL || process.env.LOCAL_URL;
+
 export default function addItem() {
     // eslint-disable-next-line react-hooks/rules-of-hooks
     const [name, setName] = useState('');
@@ -22,7 +24,7 @@ export default function addItem() {
         }
 
         try {
-            const res = await fetch('https://app1-milleba.vercel.app/api/items', {
+            const res = await fetch(`${API_URL}/api/items`, {
                 method: 'POST',
                 headers: {
                     'Content-type': 'application/json'

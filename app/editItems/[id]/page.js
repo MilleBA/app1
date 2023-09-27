@@ -1,9 +1,10 @@
 import EditItemsForm from "@/components/EditItemsForm";
 
+const API_URL = process.env.NEXT_PUBLIC_API_URL || process.env.LOCAL_URL;
 
 const getItemsById = async (id) => {
     try {
-        const res = await fetch(`https://app1-milleba.vercel.app/api/items/${id}`, {
+        const res = await fetch(`${API_URL}/api/items/${id}`, {
             cache: "no-store",
         });
 

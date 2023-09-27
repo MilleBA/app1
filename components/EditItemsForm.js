@@ -4,6 +4,8 @@ import {useState} from "react";
 import {useRouter} from "next/navigation";
 import Button from "@/components/Button";
 
+const API_URL = process.env.NEXT_PUBLIC_API_URL || process.env.LOCAL_URL;
+
 export default function EditItemsForm({id, name, price, amount}) {
     const [newName, setNewName] = useState(name);
     const [newPrice, setNewPrice] = useState(price);
@@ -15,7 +17,7 @@ export default function EditItemsForm({id, name, price, amount}) {
         e.preventDefault();
 
         try {
-            const res = await fetch(`https://app1-milleba.vercel.app/api/items/${id}`, {
+            const res = await fetch(`${API_URL}/api/items/${id}`, {
                 method: 'PUT',
                 headers: {
                     'Content-type': 'application/json'
