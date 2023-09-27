@@ -23,7 +23,7 @@ export default function addItem() {
         }
 
         try {
-            const res = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/api/items`, {
+            const res = await fetch('https://app1-milleba.vercel.app/api/items', {
                 method: 'POST',
                 headers: {
                     'Content-type': 'application/json'

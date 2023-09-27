@@ -11,7 +11,7 @@ export default function ItemsComponent() {
     useEffect(() => {
         const getItems = async () => {
             try {
-                const res = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/api/items`, {cache: "no-store"});
+                const res = await fetch('https://app1-milleba.vercel.app/api/items', {cache: "no-store"});
                 if (!res.ok) throw new Error("Failed to fetch items");
                 const data = await res.json();
                 setItems(data.items || []); // Set the items state to the fetched items, or an empty array if it's undefined

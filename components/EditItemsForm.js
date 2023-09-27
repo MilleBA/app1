@@ -16,7 +16,7 @@ export default function EditItemsForm({id, name, price, amount}) {
         e.preventDefault();
 
         try {
-            const res = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/api/items/${id}`, {
+            const res = await fetch(`https://app1-milleba.vercel.app/api/items/${id}`, {
                 method: 'PUT',
                 headers: {
                     'Content-type': 'application/json'
