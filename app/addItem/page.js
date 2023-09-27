@@ -22,7 +22,7 @@ export default function addItem() {
         }
 
         try {
-            const res = await fetch('http://localhost:3000/api/items', {
+            const res = await fetch('https://app1-milleba.vercel.app/api/items', {
                 method: 'POST',
                 headers: {
                     'Content-type': 'application/json'
