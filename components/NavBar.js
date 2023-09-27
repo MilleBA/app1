@@ -21,7 +21,7 @@ export function NavBar() {
         {name: "Home", href: "/"},
         {name: "Projects", href: "/projects"},
         {name: "Contact", href: "/contact"},
-        {name: "Varer", href: "/varer"},
+        {name: "Mille's 🛒", href: "/items"},
         {name: "Login", href: "/login"},
         {name: "Profile", href: "/profile"},
     ];

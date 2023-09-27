@@ -22,7 +22,19 @@
     background-image: url('/images/e.jpg');
 }
 
-.vare-img {
+.item-img {
     background-image: url('/images/v.jpg');
 }
+
+.add_item-img {
+    background-image: url('/images/g.jpg');
+}
+
+.edit_item-img {
+    background-image: url('/images/j.jpg');
+}
+
+
+
+
 
