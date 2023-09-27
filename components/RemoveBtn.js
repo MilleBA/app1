@@ -8,7 +8,7 @@ export default function RemoveBtn({id}) {
     const removeItems = async () => {
         const confirmed = confirm('Are you sure?');
         if (confirmed) {
-            const res = await fetch(`http://localhost:3000/api/items?id=${id}`, {
+            const res = await fetch(`https://app1-milleba.vercel.app/api/items?id=${id}`, {
                 method: 'DELETE',
             });
             if (res.ok) {

@@ -3,7 +3,7 @@ import EditItemsForm from "@/components/EditItemsForm";
 
 const getItemsById = async (id) => {
     try {
-        const res = await fetch(`http://localhost:3000/api/items/${id}`, {
+        const res = await fetch(`https://app1-milleba.vercel.app/api/items/${id}`, {
             cache: "no-store",
         });
 
