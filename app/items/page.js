@@ -1,4 +1,3 @@
-import ItemsComponent from "@/components/ItemsComponent";
 import Link from "next/link";
 
 export default function ItemsPage() {
