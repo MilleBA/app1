@@ -1,1 +1,7 @@
-[]
+[
+    {
+        "name": "energiForbruk",
+        "private": false,
+        "disable_arg_logs": true
+    }
+]
