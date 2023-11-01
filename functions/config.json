@@ -3,5 +3,10 @@
         "name": "energiForbruk",
         "private": false,
         "disable_arg_logs": true
+    },
+    {
+        "name": "createKunde",
+        "private": false,
+        "disable_arg_logs": true
     }
 ]
